@@ -13,11 +13,11 @@
 
 ## Features
 
-OAuth Authentication: Secure login with email verification.
-Document Upload: Upload PDFs.
-Note-Taking (Voice Memo and Typing): Add comments by typing or recording voice memo which link to points in the document.
-Text-to-Speech: Listen to PDFs with playback.
-Color-Coded Notes: Ability to organize notes with colors.
+- OAuth Authentication: Secure login with email verification.
+- Document Upload: Upload PDFs.
+- Note-Taking (Voice Memo and Typing): Add comments by typing or recording voice memo which link to points in the document.
+- Text-to-Speech: Listen to PDFs with playback.
+- Color-Coded Notes: Ability to organize notes with colors.
 
 ## Constraints
 
