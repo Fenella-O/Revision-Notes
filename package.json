@@ -13,15 +13,11 @@
     "type": "git",
     "url": "git+https://github.com/Fenella-O/Revision-Notes.git"
   },
-  "author": "Fenella O'Neal",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Fenella-O/Revision-Notes/issues"
   },
-  "homepage": "https://github.com/Fenella-O/Revision-Notes#readme",
-  "devDependencies": {
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.13"
-  }
+  "homepage": "https://github.com/Fenella-O/Revision-Notes#readme"
 }
