@@ -5,7 +5,7 @@
 - Provide users with the ability to upload PDFs/projects and have them read aloud using text-to-speech (TTS).
 - Enable users to add, view, and organize comments (text or voice) while listening.
 - Ensure seamless navigation and playback within documents.
-- Prepare the system for eventual mobile app integration with synced data.
+- Responsive web design to use with mobile devices.
 
 ## Users
 
