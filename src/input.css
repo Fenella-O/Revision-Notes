@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
 
 
@@ -11,7 +10,7 @@
 
 @layer utilities{
     .normal-font{
-        font-family: "Libre Baskerville", 'Times New Roman', Times, serif;
+        font-family:'Libre Baskerville', 'Times New Roman', Times, serif;
     }
 }
 

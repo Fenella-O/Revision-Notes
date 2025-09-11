@@ -192,9 +192,6 @@
   .my-4 {
     margin-block: calc(var(--spacing) * 4);
   }
-  .my-5 {
-    margin-block: calc(var(--spacing) * 5);
-  }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
@@ -207,29 +204,8 @@
   .grid {
     display: grid;
   }
-  .table {
-    display: table;
-  }
-  .h-0 {
-    height: calc(var(--spacing) * 0);
-  }
-  .h-0\.5 {
-    height: calc(var(--spacing) * 0.5);
-  }
-  .h-2 {
-    height: calc(var(--spacing) * 2);
-  }
-  .h-5 {
-    height: calc(var(--spacing) * 5);
-  }
-  .h-8 {
-    height: calc(var(--spacing) * 8);
-  }
   .h-10 {
     height: calc(var(--spacing) * 10);
-  }
-  .h-20 {
-    height: calc(var(--spacing) * 20);
   }
   .h-50 {
     height: calc(var(--spacing) * 50);
@@ -243,9 +219,6 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-3 {
-    width: calc(var(--spacing) * 3);
-  }
   .w-3\/4 {
     width: calc(3/4 * 100%);
   }
@@ -254,12 +227,6 @@
   }
   .w-full {
     width: 100%;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -270,44 +237,8 @@
   .grid-rows-2 {
     grid-template-rows: repeat(2, minmax(0, 1fr));
   }
-  .grid-rows-\[3fr_1fr_3fr_3fr\] {
-    grid-template-rows: 3fr 1fr 3fr 3fr;
-  }
-  .grid-rows-\[3fr_2fr_3fr_3fr\] {
-    grid-template-rows: 3fr 2fr 3fr 3fr;
-  }
-  .grid-rows-\[4fr_1fr_3fr_3fr\] {
-    grid-template-rows: 4fr 1fr 3fr 3fr;
-  }
-  .grid-rows-\[5fr_1fr_4fr_4fr\] {
-    grid-template-rows: 5fr 1fr 4fr 4fr;
-  }
-  .grid-rows-\[5fr_4fr_4fr_4fr\] {
-    grid-template-rows: 5fr 4fr 4fr 4fr;
-  }
-  .grid-rows-\[6fr_1fr_4fr_4fr\] {
-    grid-template-rows: 6fr 1fr 4fr 4fr;
-  }
-  .grid-rows-\[7fr_1fr_4fr_4fr\] {
-    grid-template-rows: 7fr 1fr 4fr 4fr;
-  }
-  .grid-rows-\[7fr_2fr_4fr_4fr\] {
-    grid-template-rows: 7fr 2fr 4fr 4fr;
-  }
-  .grid-rows-\[7fr_2fr_6fr_4fr\] {
-    grid-template-rows: 7fr 2fr 6fr 4fr;
-  }
   .grid-rows-\[7fr_2fr_7fr_4fr\] {
     grid-template-rows: 7fr 2fr 7fr 4fr;
-  }
-  .grid-rows-\[7fr_3fr_4fr_4fr\] {
-    grid-template-rows: 7fr 3fr 4fr 4fr;
-  }
-  .grid-rows-\[8fr_1fr_4fr_4fr\] {
-    grid-template-rows: 8fr 1fr 4fr 4fr;
-  }
-  .grid-rows-\[10fr_1fr_4fr_4fr\] {
-    grid-template-rows: 10fr 1fr 4fr 4fr;
   }
   .flex-col {
     flex-direction: column;
@@ -327,10 +258,6 @@
   }
   .rounded-lg {
     border-radius: var(--radius-lg);
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
   }
   .border-t {
     border-top-style: var(--tw-border-style);
@@ -405,18 +332,8 @@
   .italic {
     font-style: italic;
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .opacity-90 {
     opacity: 90%;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
-  .filter {
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .sm\:h-3\/4 {
     @media (width >= 40rem) {
@@ -472,10 +389,9 @@
     }
   }
 }
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 @layer utilities {
   .normal-font {
-    font-family: "Libre Baskerville", 'Times New Roman', Times, serif;
+    font-family: 'Libre Baskerville', 'Times New Roman', Times, serif;
   }
 }
 @layer components {
@@ -566,10 +482,9 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
+@property --tw-duration {
   syntax: "*";
   inherits: false;
-  initial-value: solid;
 }
 @property --tw-blur {
   syntax: "*";
@@ -621,10 +536,6 @@
   initial-value: 100%;
 }
 @property --tw-drop-shadow-size {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-duration {
   syntax: "*";
   inherits: false;
 }
@@ -699,7 +610,7 @@
       --tw-space-x-reverse: 0;
       --tw-border-style: solid;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
+      --tw-duration: initial;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
@@ -713,7 +624,6 @@
       --tw-drop-shadow-color: initial;
       --tw-drop-shadow-alpha: 100%;
       --tw-drop-shadow-size: initial;
-      --tw-duration: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
       --tw-shadow-alpha: 100%;
