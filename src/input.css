@@ -2,16 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
 
+
 @theme{
     --color-darkblue: #02365C;
     --color-darkred: #5D200E;
     --color-beige:#D9BF9E;
-    --font-default: 'Libre Baskerville', ui-serif, serif;
+}
+
+@layer utilities{
+    .normal-font{
+        font-family: "Libre Baskerville", 'Times New Roman', Times, serif;
+    }
 }
 
 @layer components{
     .btn-red{
-        @apply bg-darkred text-red-400 border border-red-400 border-b-4 font-medium overflow-hidden relative px-10 py-1 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 font-default mt-5;
+        @apply bg-darkred text-red-400 border border-red-400 border-b-4 font-medium overflow-hidden relative px-10 py-1 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 mt-5;
     }
     .btn-red-span{
         @apply bg-red-400 shadow-red-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)];
@@ -19,8 +25,9 @@
 }
 
 .library-background{
-   background-image:url(' ../assets/library-background.jpg');
+   background-image:url('../assets/library-background.jpg');
    background-size: cover;
    background-repeat:no-repeat;
    background-position: center;
 }
+
